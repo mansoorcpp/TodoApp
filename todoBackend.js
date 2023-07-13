@@ -75,7 +75,7 @@ async function RandomIDGen() {
   })
   const User = mongoose.model('User', userSchema);
   const todos = mongoose.model('todos',todoSchema);
-  mongoose.connect("mongodb+srv://Mansoor:" + encodeURIComponent("Mansoor@102") + "@cluster0.s67fgzn.mongodb.net/TodoApp",{ useNewUrlParser: true, useUnifiedTopology: true, dbName: "TodoApp" })
+  mongoose.connect("mongodb+srv://Mansoor:" + encodeURIComponent("") + "@cluster0.s67fgzn.mongodb.net/TodoApp",{ useNewUrlParser: true, useUnifiedTopology: true, dbName: "TodoApp" })
   const app = express();
   const port = 3000; 
   app.listen(port,() => {console.log(`Listening on ${port}`)});
